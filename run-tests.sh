@@ -1,2 +1,2 @@
 #!/bin/bash
-dotnet test Warden.Watchers.Web.Tests/Warden.Watchers.Web.Tests.csproj
+dotnet test tests/Warden.Watchers.Web.Tests/Warden.Watchers.Web.Tests.csproj
