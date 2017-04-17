@@ -1,12 +1,12 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Description>Warden Web Watcher.</Description>
+    <Description>Warden Web Watcher tests.</Description>
     <VersionPrefix>1.4.0</VersionPrefix>
     <Authors>Piotr Gankiewicz</Authors>
-    <TargetFrameworks>netstandard1.6</TargetFrameworks>
-    <AssemblyName>Warden.Watchers.Web</AssemblyName>
-    <PackageId>Warden.Watchers.Web</PackageId>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <AssemblyName>Warden.Watchers.Web.Tests</AssemblyName>
+    <PackageId>Warden.Watchers.Web.Tests</PackageId>
     <PackageTags>Warden</PackageTags>
     <PackageProjectUrl>https://getwarden.net</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/warden-stack/Warden.Watchers.Web/blob/master/LICENSE</PackageLicenseUrl>
@@ -19,9 +19,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Warden" Version="1.*" />
-    <PackageReference Include="System.Net.Http" Version="4.*" />
-    <PackageReference Include="Newtonsoft.Json" Version="9.*" />
+    <ProjectReference Include="../Warden.Watchers.Web/Warden.Watchers.Web.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Warden" Version="1.*" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0" />
+    <PackageReference Include="FluentAssertions" Version="4.*" />
+    <PackageReference Include="Machine.Specifications" Version="0.11.0" />
+    <PackageReference Include="Machine.Specifications.Should" Version="0.11.0" />
+    <PackageReference Include="Machine.Specifications.Runner.VisualStudio" Version="2.*" />
+    <PackageReference Include="Moq" Version="4.*" />
+  </ItemGroup>
 </Project>

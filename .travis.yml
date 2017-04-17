@@ -12,6 +12,7 @@ before_script:
   - chmod a+x ./run-tests.sh
 script:
   - ./travis-build.sh
+  - ./run-tests.sh
 notifications:
   email:
     on_success: never
