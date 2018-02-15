@@ -48,7 +48,7 @@ namespace Warden.Watchers.Web
 
                 return await EnsureAsync(fullUrl, response);
             }
-            catch (TaskCanceledException exception)
+            catch (TaskCanceledException)
             {
                 return WebWatcherCheckResult.Create(this,
                     false, _configuration.Uri,

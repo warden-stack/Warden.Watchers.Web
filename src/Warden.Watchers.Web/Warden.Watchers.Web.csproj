@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <Description>Warden Web Watcher.</Description>
-    <VersionPrefix>1.4.0</VersionPrefix>
+    <VersionPrefix>2.0.0</VersionPrefix>
     <Authors>Piotr Gankiewicz</Authors>
-    <TargetFrameworks>netstandard1.6</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <AssemblyName>Warden.Watchers.Web</AssemblyName>
+    <Title>Warden.Watchers.Web</Title>
     <PackageId>Warden.Watchers.Web</PackageId>
-    <PackageTags>Warden</PackageTags>
+    <PackageTags>Warden Warden.Watchers.Web</PackageTags>
     <PackageProjectUrl>https://getwarden.net</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/warden-stack/Warden.Watchers.Web/blob/master/LICENSE</PackageLicenseUrl>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
@@ -17,11 +17,10 @@
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
   </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="Warden" Version="1.*" />
-    <PackageReference Include="System.Net.Http" Version="4.*" />
-    <PackageReference Include="Newtonsoft.Json" Version="9.*" />
   </ItemGroup>
-
+  <ItemGroup>
+    <PackageReference Include="Warden" Version="2.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+  </ItemGroup>
 </Project>
