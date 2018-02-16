@@ -1,3 +1,2 @@
 #!/bin/bash
 dotnet build
-
